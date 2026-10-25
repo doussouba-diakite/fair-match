@@ -32,3 +32,25 @@ table { width: 100%; border-collapse: collapse; } th, td { text-align: left; pad
 .pill { display: inline-block; padding: 3px 10px; border-radius: 99px; font-weight: 700; font-size: .8rem; color: #fff; }
 .bar { height: 10px; border-radius: 99px; background: var(--good); }
 @media (max-width: 640px) { .scale button { font-size: .7rem; } .match { grid-template-columns: 1fr; } }
+.small { font-size: .85rem; } .btn.small { padding: 7px 12px; font-size: .85rem; }
+nav { display: flex; align-items: center; } nav .btn.primary { color: #fff; margin-left: 18px; }
+.linklike { background: none; border: none; color: var(--muted); font: inherit; font-weight: 600; margin-left: 18px; cursor: pointer; }
+.linklike:hover { color: var(--accent); }
+a.btn { text-decoration: none; display: inline-block; } a.btn.primary { color: #fff; }
+.auth { max-width: 420px; margin: 30px auto; display: grid; gap: 12px; }
+.auth label, label.block { display: grid; gap: 6px; font-weight: 600; font-size: .9rem; margin-top: 8px; }
+input, textarea { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+textarea { min-height: 70px; resize: vertical; } .grow { flex: 1; }
+.error { color: crimson; } .center { text-align: center; }
+.hero { padding: 40px 0 20px; } .hero h1 { font-size: 2.6rem; max-width: 640px; line-height: 1.15; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+.tag { background: var(--line); color: var(--muted); border-radius: 99px; padding: 2px 8px; font-size: .7rem; vertical-align: middle; }
+.bio { font-style: italic; margin: 6px 0; }
+.starters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.chip { border: 1px solid var(--accent); color: var(--accent); background: #fff; border-radius: 99px; padding: 7px 12px; cursor: pointer; font: inherit; font-size: .85rem; text-align: left; }
+.thread { display: flex; flex-direction: column; gap: 8px; min-height: 120px; }
+.bubble { align-self: flex-start; background: var(--bg); border: 1px solid var(--line); padding: 8px 12px; border-radius: 14px; max-width: 75%; }
+.bubble.mine { align-self: flex-end; background: var(--ink); color: #fff; border-color: var(--ink); }
+.bar { display: inline-block; vertical-align: middle; }
+@media (max-width: 640px) { .steps { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
+a.btn:not(.primary) { color: var(--ink); background: #fff; border: 1px solid var(--line); }

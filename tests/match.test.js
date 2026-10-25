@@ -48,3 +48,9 @@ test("the audit catches a matcher that is biased against a group", () => {
   assert.equal(result.pass, false);
   assert.equal(result.rows.find((r) => r.group === "C").timesShown, 0);
 });
+
+test("matching works with numeric database ids", () => {
+  const withNumbers = PROFILES.map((p, i) => ({ ...p, id: i + 1 }));
+  const top = topMatches(withNumbers[0], withNumbers);
+  assert.equal(top.length, 5);
+});
