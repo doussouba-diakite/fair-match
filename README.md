@@ -45,9 +45,9 @@ npm test                        # 7 tests: scoring, dealbreakers, explanations, 
 
 ## Deploy (free)
 
-1. Create a free Postgres database at [neon.tech](https://neon.tech) and copy its connection string.
-2. Run `DATABASE_URL="<that string>" node scripts/setup-db.js` once to create the tables.
-3. Import this repo at [vercel.com](https://vercel.com), add `DATABASE_URL` as an environment variable, and deploy.
+1. Create a free Postgres database at [neon.tech](https://neon.tech). Open its **SQL Editor**, paste the contents of [`db/setup.sql`](db/setup.sql), and run it. That creates the tables and the 60 demo profiles (safe to run twice).
+2. Copy the database's connection string from Neon.
+3. Import this repo at [vercel.com](https://vercel.com), add `DATABASE_URL` (the connection string) as an environment variable, and deploy.
 
 ## What I'd build next
 
